@@ -205,6 +205,8 @@ your-api.example.com
 | **v2.0** | WFP deep integration (per-process egress at kernel level) | 2-3 weeks |
 | **v2.1** | Windows Event Log integration | 1 week |
 
+> For the full roadmap including v3.0 plans (compiled binary, Windows service, GUI), see [ROADMAP.md](ROADMAP.md).
+
 ---
 
 ## Companion Projects
