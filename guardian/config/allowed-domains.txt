@@ -1,0 +1,47 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# AI-Bastion-Guardian — Allowed Domains for Egress Proxy
+# One domain per line. Lines starting with # are comments.
+# These are the ONLY domains agent processes can connect to.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── AI Provider APIs ──
+api.anthropic.com
+api.openai.com
+generativelanguage.googleapis.com
+api.groq.com
+api.together.xyz
+api.mistral.ai
+
+# ── Model Downloads ──
+huggingface.co
+cdn-lfs.huggingface.co
+ollama.com
+registry.ollama.ai
+
+# ── Package Managers ──
+pypi.org
+files.pythonhosted.org
+registry.npmjs.org
+crates.io
+static.crates.io
+
+# ── Code & Version Control ──
+github.com
+api.github.com
+raw.githubusercontent.com
+objects.githubusercontent.com
+
+# ── System / DNS ──
+dns.google
+cloudflare-dns.com
+1.1.1.1
+8.8.8.8
+
+# ── Search APIs (if agent uses web search) ──
+api.search.brave.com
+serpapi.com
+api.tavily.com
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# ADD YOUR CUSTOM DOMAINS BELOW
+# ═══════════════════════════════════════════════════════════════════════════════

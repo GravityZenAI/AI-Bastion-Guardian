@@ -1,0 +1,30 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# AI-Bastion-Guardian — Suspicious Process Patterns
+# Processes matching these patterns will be flagged by monitoring
+# Used in future Canary-Watch module (v1.2)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Reverse shells
+nc.exe
+ncat.exe
+netcat.exe
+socat.exe
+
+# Credential dumpers
+mimikatz
+lazagne
+procdump
+
+# Crypto miners
+xmrig
+cpuminer
+minerd
+
+# Remote access
+psexec
+winexe
+chisel
+
+# Suspicious scripting in agent context
+powershell -encodedcommand
+cmd /c whoami

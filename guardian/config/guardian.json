@@ -1,0 +1,42 @@
+{
+    "version": "1.0.0",
+    "description": "AI-Bastion-Guardian configuration",
+
+    "agent_ports": [
+        { "port": 8000,  "name": "FastAPI/Uvicorn" },
+        { "port": 8888,  "name": "Jupyter/Agent UI" },
+        { "port": 9999,  "name": "OpenClaw Gateway" },
+        { "port": 18789, "name": "OpenClaw Default" },
+        { "port": 11434, "name": "Ollama API" },
+        { "port": 3000,  "name": "Dev Server" },
+        { "port": 8080,  "name": "HTTP Proxy" }
+    ],
+
+    "allowed_source_ranges": [
+        "127.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16"
+    ],
+
+    "agent_processes": [
+        "node",
+        "python",
+        "python3",
+        "ollama",
+        "uvicorn",
+        "openclaw"
+    ],
+
+    "wsl_config": {
+        "localhostForwarding": true,
+        "memory": "16GB",
+        "processors": 8,
+        "swap": "4GB"
+    },
+
+    "logging": {
+        "log_dir": "%USERPROFILE%\\.ai-bastion-guardian",
+        "max_log_size_mb": 50,
+        "retention_days": 30
+    }
+}
